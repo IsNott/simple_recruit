@@ -1,10 +1,18 @@
 package org.nott.recruit.service.impl;
 
-import org.nott.recruit.entity.Users;
-import org.nott.recruit.mapper.UsersMapper;
+
+import org.nott.recruit.bean.model.Users;
+import org.nott.recruit.common.exception.BusinessException;
+import org.nott.recruit.service.mapper.UsersMapper;
 import org.nott.recruit.service.IUsersService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
+
+import java.util.Objects;
 
 /**
  * <p>
@@ -15,6 +23,17 @@ import org.springframework.stereotype.Service;
  * @since 2024-02-19
  */
 @Service
-public class UsersServiceImpl extends ServiceImpl<UsersMapper, Users> implements IUsersService {
+public class UsersServiceImpl extends ServiceImpl<UsersMapper, Users> implements IUsersService, UserDetailsService {
 
+    @Autowired
+    private UsersMapper usersMapper;
+
+    @Override
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+        Users users = usersMapper.getUserByUserName(username);
+        if(Objects.isNull(users)){
+            throw new BusinessException(String.format("user %s not found", username));
+        }
+        return users;
+    }
 }

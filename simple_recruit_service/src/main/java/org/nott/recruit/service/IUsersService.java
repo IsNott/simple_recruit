@@ -1,7 +1,8 @@
 package org.nott.recruit.service;
 
-import org.nott.recruit.entity.Users;
+
 import com.baomidou.mybatisplus.extension.service.IService;
+import org.nott.recruit.bean.model.Users;
 
 /**
  * <p>

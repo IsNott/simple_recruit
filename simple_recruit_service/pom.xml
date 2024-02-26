@@ -23,5 +23,19 @@
             <artifactId>simple_recruit_bean</artifactId>
             <version>${simple.recruit-version}</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.nott</groupId>
+            <artifactId>simple_recruit_common</artifactId>
+            <version>${simple.recruit-version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt -->
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt</artifactId>
+        </dependency>
+
+
     </dependencies>
 </project>
