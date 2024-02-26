@@ -2,7 +2,7 @@
 
 ## 描述[project description]
 
-基于Springboot3的开发练手项目，仿造国网upwork招聘网站开发的后端项目，在个人搭建的springboot3+spring security+jjwt鉴权脚手架进行开发。
+基于Springboot3的开发练手项目，仿造upwork招聘网站开发的后端项目，在个人搭建的springboot3+spring security+jjwt鉴权脚手架进行开发。
 
 脚手架后续上传仓库。
 
@@ -39,4 +39,5 @@
 
 ## 参照项目[Reference project]
 
-[spring-boot-redis-jwt]: https://github.com/privatejava/spring-boot-redis-jwt/tree/d0ef93d304d463419a81c7e5b852967595c2aecd
+'spring-boot-redis-jwt'
+[github]: https://github.com/privatejava/spring-boot-redis-jwt/tree/d0ef93d304d463419a81c7e5b852967595c2aecd
