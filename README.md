@@ -4,7 +4,9 @@
 
 基于Springboot3的开发练手项目，仿造upwork招聘网站开发的后端项目，在个人搭建的springboot3+spring security+jjwt鉴权脚手架进行开发。
 
-脚手架后续上传仓库。
+脚手架仓库：
+'spring-cloud-security-cli'
+[github]: https://github.com/IsNott/spring-cloud-security-cli.git
 
 ## 依赖[Denpendencyies]
 
@@ -40,4 +42,8 @@
 ## 参照项目[Reference project]
 
 'spring-boot-redis-jwt'
-[github]: https://github.com/privatejava/spring-boot-redis-jwt/tree/d0ef93d304d463419a81c7e5b852967595c2aecd
+[github]: https://github.com/privatejava/spring-boot-redis-jwt/
+
+## 说明
+基于Apache 2.0开源协议。
+完全开源，任意拉取使用或修改源代码。
